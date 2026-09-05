@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Georgi Mammen Mullassery
+# 👋 Hi, I'm Georgi Mullassery
 
 **MarTech Solutions Architect** | Customer Data Platforms • Data Engineering • AI Engineering | Bengaluru, India
 

@@ -4,7 +4,7 @@ Context file for AI coding agents (Claude Code, Cursor, Codex, Cline, Copilot, e
 
 ## Who owns this account
 
-Georgi Mammen Mullassery — MarTech Solutions Architect (Customer Data Platforms, data engineering, AI engineering), 10+ years in enterprise customer data and marketing technology, based in Bengaluru, India. Builds systems-level Rust software and Python developer tools outside of day-job work.
+Georgi Mullassery — MarTech Solutions Architect (Customer Data Platforms, data engineering, AI engineering), 10+ years in enterprise customer data and marketing technology, based in Bengaluru, India. Builds systems-level Rust software and Python developer tools outside of day-job work.
 
 ## Repo families
 
