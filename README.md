@@ -9,7 +9,7 @@
 
 ## 🚀 About Me
 
-Solutions Architect with 10+ years of experience designing and delivering enterprise-scale customer data, marketing technology, analytics, and AI-enabled solutions. Expertise in Customer Data Platforms (Adobe RT-CDP, Braze, mParticle, Segment CDP), event-driven architectures, cloud data platforms, customer journey orchestration, identity resolution, real-time activation, and data engineering on Google Cloud and Azure.
+Solutions Architect with more than a decade of work experience across IBM, Wipro, IPG Mediabrands, and others, designing and delivering enterprise-scale customer data, marketing technology, analytics, and AI-enabled solutions. Expertise in Customer Data Platforms (Adobe RT-CDP, Braze, mParticle, Segment CDP), event-driven architectures, cloud data platforms, customer journey orchestration, identity resolution, real-time activation, and data engineering on Google Cloud and Azure.
 
 Outside of MarTech, I build systems-level software for fun — an AI-native operating system kernel and display stack written in Rust (the SHER OS family), plus a growing set of open-source Python and Rust developer tools.
 
