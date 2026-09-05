@@ -57,6 +57,89 @@ Built on Apple's Virtualization.framework. Boots a real Ubuntu guest to a workin
 ### 🐍 Python & Rust developer tools
 A growing suite of focused, single-purpose tools spanning robotics data ([PyRoboFrames](https://github.com/Mullassery/PyRoboFrames), [PyRoboSimulator](https://github.com/Mullassery/PyRoboSimulator)), dependency auditing ([PyDependencyCheck](https://github.com/Mullassery/PyDependencyCheck), [PyAPICheck](https://github.com/Mullassery/PyAPICheck)), and runtime state tagging ([PyTagManager](https://github.com/Mullassery/PyTagManager)).
 
+## 📂 All Repositories
+
+<details>
+<summary>SHER OS platform (AI-native operating system, Rust)</summary>
+
+| Repo | Description |
+|---|---|
+| [SHER-KERNEL](https://github.com/Mullassery/SHER-KERNEL) | AI-native OS kernel — zero-trust security, isolated driver runtime, Linux kernel interface |
+| [SHER-Graphics](https://github.com/Mullassery/SHER-Graphics) | Software GPU simulation + real Vulkan/MoltenVK backend |
+| [SHER-Display](https://github.com/Mullassery/SHER-Display) | Display server, compositor, and window manager |
+| [SHER-INPUT](https://github.com/Mullassery/SHER-INPUT) | Input subsystem — canonical event stream for Display and Aurora |
+| [SHER-Aurora](https://github.com/Mullassery/SHER-Aurora) | GNOME-style design system: tokens, typography, motion, accessibility |
+| [SHER-Process-Explorer](https://github.com/Mullassery/SHER-Process-Explorer) | Evidence-based Linux process explorer — /proc telemetry, eBPF sampling, daemon + CLI + desktop UI |
+
+</details>
+
+<details>
+<summary>Systems & runtimes</summary>
+
+| Repo | Description |
+|---|---|
+| [TinyBridge](https://github.com/Mullassery/TinyBridge) | macOS-native Linux VM runtime on Apple's Virtualization.framework |
+| [PrismNote](https://github.com/Mullassery/PrismNote) | Jupyter-compatible data-science notebook with built-in AI |
+| [homebrew-tinybridge](https://github.com/Mullassery/homebrew-tinybridge) | Homebrew tap for TinyBridge |
+| [homebrew-prismnote](https://github.com/Mullassery/homebrew-prismnote) | Homebrew tap for PrismNote |
+
+</details>
+
+<details>
+<summary>LLM & AI tooling</summary>
+
+| Repo | Description |
+|---|---|
+| [PyTokenCalc](https://github.com/Mullassery/PyTokenCalc) | Token counting & cost estimation across 20+ LLM providers |
+| [PyInferenceManager](https://github.com/Mullassery/PyInferenceManager) | Multi-provider LLM inference executor — 11+ providers, batching, load testing |
+| [PyStreamMCP](https://github.com/Mullassery/PyStreamMCP) | Query planning & context discovery for AI agents — 60–75% token reduction |
+| [PyVectorHound](https://github.com/Mullassery/PyVectorHound) | Diagnostic engine for RAG retrieval failures |
+| [PyStreamPDF](https://github.com/Mullassery/PyStreamPDF) | Selective PDF extraction to cut RAG costs 50–70% |
+| [OpenAnchor](https://github.com/Mullassery/OpenAnchor) | Token intelligence middleware for multi-provider LLM usage |
+
+</details>
+
+<details>
+<summary>Data engineering & quality</summary>
+
+| Repo | Description |
+|---|---|
+| [PyDependencyCheck](https://github.com/Mullassery/PyDependencyCheck) | Dependency intelligence for Python — supply chain integrity |
+| [PyAirflowTester](https://github.com/Mullassery/PyAirflowTester) | Airflow & dbt reliability and quality-assurance platform |
+| [StatGuardian](https://github.com/Mullassery/StatGuardian) | Declarative data quality framework (Rust) — 13x faster than pandera |
+| [PyReverseETL](https://github.com/Mullassery/PyReverseETL) | Quality-validated reverse ETL with lineage tracking |
+| [PyBeamGuard](https://github.com/Mullassery/PyBeamGuard) | Apache Beam & Dataflow pipeline analysis and cost forecasting |
+| [PyStreamXL](https://github.com/Mullassery/PyStreamXL) | Stream large Excel files with constant memory — 46x faster than openpyxl |
+| [PySynthData](https://github.com/Mullassery/PySynthData) | Synthetic data generation for ML training |
+| [PyWeatherEnriched](https://github.com/Mullassery/PyWeatherEnriched) | Weather data enrichment for ML pipelines |
+| [PyNetworkIntel](https://github.com/Mullassery/PyNetworkIntel) | Network discovery, topology mapping, anomaly detection |
+
+</details>
+
+<details>
+<summary>Robotics & simulation</summary>
+
+| Repo | Description |
+|---|---|
+| [PyRoboFrames](https://github.com/Mullassery/PyRoboFrames) | High-performance ML dataloader for robotics (LeRobot format, Apple Silicon) |
+| [PyRoboReplay](https://github.com/Mullassery/PyRoboReplay) | Robotics perception and replay engine — sensor fusion, trajectory analysis |
+| [PyRoboSimulator](https://github.com/Mullassery/PyRoboSimulator) | World simulator for autonomous systems — 100K+ agents, REST API |
+| [PyRoboVision](https://github.com/Mullassery/PyRoboVision) | Perception stack for autonomous robots & vehicles |
+| [PyTerrainMap](https://github.com/Mullassery/PyTerrainMap) | Unified terrain intelligence for multi-robot fleets |
+
+</details>
+
+<details>
+<summary>Analytics, MarTech & security</summary>
+
+| Repo | Description |
+|---|---|
+| [PyTagManager](https://github.com/Mullassery/PyTagManager) | AI-native analytics implementation — semantic DOM graph to GTM/GA4/Segment/etc. |
+| [ClusterAudienceKit](https://github.com/Mullassery/ClusterAudienceKit) | Enterprise audience intelligence — RFM, clustering, CLV, churn detection |
+| [PyAPICheck](https://github.com/Mullassery/PyAPICheck) | Transparent API security discovery and policy generation |
+
+</details>
+
 ## 📫 Reach Me
 
 - 📧 [mullassery@gmail.com](mailto:mullassery@gmail.com)
