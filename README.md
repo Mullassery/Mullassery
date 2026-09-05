@@ -3,6 +3,8 @@
 **MarTech Solutions Architect** | Customer Data Platforms • Data Engineering • AI Engineering | Bengaluru, India
 
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mullassery@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/georgi-mullassery/)
+[![Product Hunt](https://img.shields.io/badge/Product%20Hunt-DA552F?style=for-the-badge&logo=producthunt&logoColor=white)](https://www.producthunt.com/@georgi_mullassery/forums)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mullassery)
 
 ## 🚀 About Me
@@ -59,6 +61,8 @@ A growing suite of focused, single-purpose tools spanning robotics data ([PyRobo
 
 - 📧 [mullassery@gmail.com](mailto:mullassery@gmail.com)
 - 📍 Bengaluru, India
-- 🔗 [github.com/Mullassery](https://github.com/Mullassery)
+- 💼 [LinkedIn](https://www.linkedin.com/in/georgi-mullassery/)
+- 🚀 [Product Hunt](https://www.producthunt.com/@georgi_mullassery/forums)
+- 🔗 [github.com/Mullassery](https://tinyurl.com/georgi-github)
 
 **Thanks for stopping by — always happy to talk CDPs, data platforms, agentic AI, or Rust systems programming.**
