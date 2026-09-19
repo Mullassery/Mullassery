@@ -51,9 +51,6 @@ Raspberry Pi 5, ESP32, MQTT (Eclipse / RabbitMQ), Node-RED, AWS IoT Core, AWS Io
 
 ## 🌟 Featured Projects — MarTech & CDP Tooling
 
-### 🏷️ [PyTagManager](https://github.com/Mullassery/PyTagManager) — AI-native analytics implementation
-Crawls a site, builds a semantic DOM graph, and exports ready-to-use tracking configs to GTM, GA4, Segment, Snowplow, Tealium, RudderStack, and Adobe Tags — no manual CSS-selector hunting.
-
 ### 👥 [ClusterAudienceKit](https://github.com/Mullassery/ClusterAudienceKit) — Enterprise audience intelligence
 RFM analysis, 6 clustering algorithms, CLV, churn detection, and lookalike modeling. Processes 1M+ customers in under a second.
 
