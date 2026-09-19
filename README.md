@@ -69,7 +69,6 @@ Dependency intelligence and declarative data-quality validation (schema validati
 
 | Repo | Description |
 |---|---|
-| [PyTagManager](https://github.com/Mullassery/PyTagManager) | AI-native analytics implementation — semantic DOM graph to GTM/GA4/Segment/etc. |
 | [ClusterAudienceKit](https://github.com/Mullassery/ClusterAudienceKit) | Enterprise audience intelligence — RFM, clustering, CLV, churn detection |
 | [PyReverseETL](https://github.com/Mullassery/PyReverseETL) | Quality-validated reverse ETL / data activation with lineage tracking |
 
