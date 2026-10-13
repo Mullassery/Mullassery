@@ -53,6 +53,8 @@ Raspberry Pi 5, ESP32, MQTT (Eclipse / RabbitMQ), Node-RED, AWS IoT Core, AWS Io
 
 Every project below links straight to its **Use Cases** section — the fastest way to see whether it solves a problem you actually have. Status is described plainly: if something is early-stage or has known gaps, it says so.
 
+> **Not sure which project you need?** Several tools share deliberately similar names — the `Py*Guard`, `Py*Check`, `Py*Hound`, and `Py*Mesh` families. Each of those repos opens with a short **"Which project do I need?"** table that maps common problems to the right tool, so start there if two projects look alike.
+
 ### 🎯 MarTech & Customer Data (flagship)
 
 | Repo | What it does |
@@ -70,8 +72,10 @@ Every project below links straight to its **Use Cases** section — the fastest 
 | [StatGuardian](https://github.com/Mullassery/statguardian#real-world-use-cases) | Rust data-quality engine with a custom `.sg` validation DSL — schema validation, drift detection, anomaly detection. |
 | [PyBeamGuard](https://github.com/Mullassery/PyBeamGuard#use-cases) | Static analysis for Apache Beam/Flink/Spark pipelines — flags hot keys, shuffle bottlenecks, and cost risks before deployment. |
 | [PyDBTGuard](https://github.com/Mullassery/PyDBTGuard) | Scores dbt tests for reliability, cost, and blast radius from static manifest metadata — early-stage project. |
-| [PyDependencyCheck](https://github.com/Mullassery/PyDependencyCheck#use-cases) | Python dependency vulnerability scanning, health scoring, and SBOM generation. |
+| [PyDependencyCheck](https://github.com/Mullassery/PyDependencyCheck#use-cases) | Python dependency vulnerability scanning, health scoring, and SBOM generation — answers *why* each dependency exists and whether it is actually used. |
+| [PyDeepMesh](https://github.com/Mullassery/PyDeepMesh) | Multi-ecosystem dependency-graph and vulnerability intelligence (Python, Rust, Node, containers) — parses manifests, lockfiles, and Dockerfiles, matches advisories, and emits SARIF + CycloneDX SBOMs. Static analysis only; never executes your code. |
 | [PyNetworkIntel](https://github.com/Mullassery/PyNetworkIntel#use-cases) | Lightweight LAN network discovery, topology mapping, and vulnerability scanning — dependency-free by design. |
+| [PyTaskWireCheck](https://github.com/Mullassery/PyTaskWireCheck) | Local-first, dependency-aware task orchestration — DAG scheduling, content-addressed caching, retries, and a CLI/TUI/Python API. No server, no daemon. |
 | [PyStreamXL](https://github.com/Mullassery/PyStreamXL#use-cases) | Streams large `.xlsx` files row-by-row in constant memory (Rust-backed), with streaming writes and formula/comment extraction. |
 | [PySynthData](https://github.com/Mullassery/PySynthData#use-cases) | Generates synthetic relational datasets from a schema, with differential-privacy noise injection and referential-integrity-aware row generation. |
 | [PyWeatherEnriched](https://github.com/Mullassery/PyWeatherEnriched#use-cases) | Geocodes a location and fetches real historical weather data, then engineers climate features (rolling stats, degree-days, anomaly z-scores) for ML pipelines. |
@@ -84,6 +88,7 @@ Every project below links straight to its **Use Cases** section — the fastest 
 | [PyInferenceManager](https://github.com/Mullassery/PyInferenceManager#use-cases) | Multi-provider LLM inference orchestrator (Anthropic, OpenAI, Gemini, Ollama, vLLM) with cost tracking, retries, and circuit-breaking. |
 | [PyStreamMCP](https://github.com/Mullassery/PyStreamMCP#use-cases) | Query planning and context discovery for AI agents — exposed as a Python SDK, REST API, and MCP tool server. |
 | [PyVectorHound](https://github.com/Mullassery/PyVectorHound#use-cases) | Diagnostic layer for RAG/vector-search pipelines — computes retrieval-quality metrics and root-causes failures. |
+| [PyAgentHound](https://github.com/Mullassery/PyAgentHound) | Traces AI-agent execution, detects failures, and explains the root cause of bad agent output. |
 | [PyStreamPDF](https://github.com/Mullassery/PyStreamPDF#real-world-use-cases) | PDFium-backed PDF library with token-budget-aware semantic chunking, aimed at reducing what gets sent to LLMs. |
 | [PyAPICheck](https://github.com/Mullassery/PyAPICheck#use-cases) | Discovers API surface from OpenAPI/traffic, scores security risk with a named reason for every finding, and generates Cedar policy for enforcement. |
 | [PyStreamAI](https://github.com/Mullassery/PyStreamAI) | ML deployment toolkit — canary/A-B routing, cost tracking, request scheduling, and ONNX Runtime inference. |
@@ -121,6 +126,7 @@ A multi-repo, in-development OS project outside the MarTech day job. Most subsys
 | [PyRoboSimulator](https://github.com/Mullassery/PyRoboSimulator) | World simulator for autonomous systems, with a FastAPI backend service — active development, see its own README for current test/CI status. |
 | [PyRoboVision](https://github.com/Mullassery/PyRoboVision#use-cases) | Multi-object tracker (Kalman filter + Hungarian algorithm) and trajectory predictor for robot perception. |
 | [PyTerrainMap](https://github.com/Mullassery/PyTerrainMap#use-cases) | Fuses multi-robot terrain observations into a spatial/temporal store, with H3 spatial indexing and SLAM. |
+| [SyncFleet](https://github.com/Mullassery/SyncFleet) | Rust, SQLite-backed peer-to-peer state synchronization for robotics fleets — TLS 1.3 mutual authentication and conflict resolution. |
 
 ## 📫 Reach Me
 
