@@ -64,12 +64,21 @@ Every project below links straight to its **Use Cases** section — the fastest 
 | [PyReverseETL](https://github.com/Mullassery/PyReverseETL#use-cases) | Moves data from warehouses/databases to CRM and marketing-automation destinations with real PII masking and a recorded lineage graph — the activation counterpart to CDP ingestion. |
 | [MessageBirds](https://github.com/Mullassery/MessageBirds) | Customer data platform infrastructure: Kafka-based event streaming, Postgres storage, an edge ingest gateway, and SDKs across web, iOS, and Python. |
 
+**These four are complementary by design** — each is useful on its own, but together they cover a single Customer Data Platform lifecycle end to end:
+
+- **MessageBirds** — the **ingestion/infrastructure** layer: streams events from web, iOS, and Python SDKs through Kafka into Postgres.
+- **ClusterAudienceKit** — the **intelligence** layer: turns that raw data into segments with RFM analysis, clustering, and churn/CLV scoring.
+- **PyReverseETL** — the **activation** layer: pushes segments and data back out to CRM and marketing-automation destinations with PII masking and a recorded lineage graph.
+- **PyTagManager** — the **measurement** layer: implements and then runtime-verifies the analytics tags (GTM, GA4, Segment, and others) that generate the very events the loop depends on.
+
+So the stack reads as one round trip: **tag and verify the capture → ingest the events → segment the audience → activate it** — and each project is built to snap into the others rather than compete with them.
+
 ### ✅ Data Pipeline Reliability & Quality
 
 | Repo | What it does |
 |---|---|
 | [PyAirflowTester](https://github.com/Mullassery/PyAirflowTester#use-cases) | Static analysis for Airflow DAGs and dbt manifests, plus dependency-intelligence (blast radius, risk scoring) and an optional web dashboard. |
-| [StatGuardian](https://github.com/Mullassery/statguardian#real-world-use-cases) | Rust data-quality engine with a custom `.sg` validation DSL — schema validation, drift detection, anomaly detection. |
+| [StatGuardian](https://github.com/Mullassery/StatGuardian#real-world-use-cases) | Rust data-quality engine with a custom `.sg` validation DSL — schema validation, drift detection, anomaly detection. |
 | [PyBeamGuard](https://github.com/Mullassery/PyBeamGuard#use-cases) | Static analysis for Apache Beam/Flink/Spark pipelines — flags hot keys, shuffle bottlenecks, and cost risks before deployment. |
 | [PyDBTGuard](https://github.com/Mullassery/PyDBTGuard) | Scores dbt tests for reliability, cost, and blast radius from static manifest metadata — early-stage project. |
 | [PyDependencyCheck](https://github.com/Mullassery/PyDependencyCheck#use-cases) | Python dependency vulnerability scanning, health scoring, and SBOM generation — answers *why* each dependency exists and whether it is actually used. |
@@ -87,6 +96,7 @@ Every project below links straight to its **Use Cases** section — the fastest 
 | [PyTokenCalc](https://github.com/Mullassery/PyTokenCalc#real-world-use-cases) | Token counting and cost estimation across 10+ LLM provider tokenizers (OpenAI, Anthropic, Google, Cohere, Azure, HuggingFace, Ollama, and more). |
 | [PyInferenceManager](https://github.com/Mullassery/PyInferenceManager#use-cases) | Multi-provider LLM inference orchestrator (Anthropic, OpenAI, Gemini, Ollama, vLLM) with cost tracking, retries, and circuit-breaking. |
 | [PyStreamMCP](https://github.com/Mullassery/PyStreamMCP#use-cases) | Query planning and context discovery for AI agents — exposed as a Python SDK, REST API, and MCP tool server. |
+| [PyContextFold](https://github.com/Mullassery/PyContextFold) | Local-first, structure-aware context optimization for LLMs (Rust core + Python/CLI): folds source code, docs, logs and structured text into compact representations, with a deterministic, conservative "safe" profile and loss that is always labelled in the report. |
 | [PyVectorHound](https://github.com/Mullassery/PyVectorHound#use-cases) | Diagnostic layer for RAG/vector-search pipelines — computes retrieval-quality metrics and root-causes failures. |
 | [PyAgentHound](https://github.com/Mullassery/PyAgentHound) | Traces AI-agent execution, detects failures, and explains the root cause of bad agent output. |
 | [PyStreamPDF](https://github.com/Mullassery/PyStreamPDF#real-world-use-cases) | PDFium-backed PDF library with token-budget-aware semantic chunking, aimed at reducing what gets sent to LLMs. |
@@ -94,7 +104,7 @@ Every project below links straight to its **Use Cases** section — the fastest 
 | [PyStreamAI](https://github.com/Mullassery/PyStreamAI) | ML deployment toolkit — canary/A-B routing, cost tracking, request scheduling, and ONNX Runtime inference. |
 | [PyInterviewBot](https://github.com/Mullassery/PyInterviewBot) | Voice-AI interview platform: Rust gateway, Python AI service, JS client — early-stage, see its own README for current limitations. |
 | [OpenAnchor](https://github.com/Mullassery/OpenAnchor) | Token intelligence middleware for multi-provider LLM usage. |
-| [PyBlastRadius](https://github.com/Mullassery/PyBlastRadius) | Dependency-graph blast-radius analysis, criticality scoring, and failure-cascade simulation — Terraform discovery is real; Kubernetes/Airflow/OTLP sources are not yet wired up. |
+| [PyBlastRadius](https://github.com/Mullassery/PyBlastRadius) | Dependency-graph blast-radius analysis, criticality scoring, and failure-cascade simulation. Discovery from Terraform, Kubernetes manifests, Airflow DAGs, and live OTLP/gRPC traces are all real, source-level parsers — no stubbed connectors remain. |
 
 ### 🛠️ Systems & Runtimes
 
@@ -103,6 +113,8 @@ Every project below links straight to its **Use Cases** section — the fastest 
 | [TinyBridge](https://github.com/Mullassery/TinyBridge#use-cases) | macOS-native Linux VM runtime on Apple's Virtualization.framework. macOS backend is real and working; Windows/Linux backends are unimplemented scaffolding. Installed via [Homebrew tap](https://github.com/Mullassery/homebrew-tinybridge), not PyPI. |
 | [PrismNote](https://github.com/Mullassery/PrismNote#use-cases) | Jupyter-style data-science notebook: Rust/Axum backend, React frontend, real local SQL execution, and a Docker-sandboxed code executor. Installed via [Homebrew tap](https://github.com/Mullassery/homebrew-prismnote). |
 | [MudFish](https://github.com/Mullassery/MudFish) | Async Rust web crawler (frontier, fetch, parser) with Python bindings via PyO3. |
+| [CodeAtlas](https://github.com/Mullassery/CodeAtlas) | Rust-native architecture maps for codebases — scans a repo with deterministic tree-sitter analysis, groups code into components, and documents the architecture as `analysis.json`, Markdown/Mermaid, HTML, MDX, or reStructuredText. Optional LLM step names and describes components (Python, Rust, Go, JS/TS). |
+| [PyPerfGuard](https://github.com/Mullassery/PyPerfGuard) | Native benchmark runner and performance-regression guard (Rust): measures wall-clock and resource usage, compares against baselines and Git revisions, and enforces configurable regression policies in any CI — no hosted service. |
 
 ### 🖥️ SHER OS — an AI-native operating system, built from scratch (Rust)
 
@@ -114,7 +126,7 @@ A multi-repo, in-development OS project outside the MarTech day job. Most subsys
 | [SHER-Graphics](https://github.com/Mullassery/SHER-Graphics#use-cases) | GPU abstraction and rendering — software simulation plus a real, working Vulkan/MoltenVK backend. |
 | [SHER-Display](https://github.com/Mullassery/SHER-Display#use-cases) | Display server, compositor, and window management. |
 | [SHER-INPUT](https://github.com/Mullassery/SHER-INPUT#use-cases) | Canonical, backend-independent input event stream — real evdev backend on Linux, simulated backend for hardware-free testing. |
-| [SHER-Aurora](https://github.com/Mullassery/aurora#use-cases) | GNOME-style design system — tokens, typography, motion, and an automated WCAG contrast audit. |
+| [SHER-Aurora](https://github.com/Mullassery/SHER-Aurora#use-cases) | GNOME-style design system — tokens, typography, motion, and an automated WCAG contrast audit. |
 | [SHER-Process-Explorer](https://github.com/Mullassery/SHER-Process-Explorer#use-cases) | Evidence-based Linux process investigation tool — `/proc` telemetry, bpftrace integration, daemon + CLI + desktop UI. |
 
 ### 🦾 Robotics & Simulation
@@ -126,7 +138,7 @@ A multi-repo, in-development OS project outside the MarTech day job. Most subsys
 | [PyRoboSimulator](https://github.com/Mullassery/PyRoboSimulator) | World simulator for autonomous systems, with a FastAPI backend service — active development, see its own README for current test/CI status. |
 | [PyRoboVision](https://github.com/Mullassery/PyRoboVision#use-cases) | Multi-object tracker (Kalman filter + Hungarian algorithm) and trajectory predictor for robot perception. |
 | [PyTerrainMap](https://github.com/Mullassery/PyTerrainMap#use-cases) | Fuses multi-robot terrain observations into a spatial/temporal store, with H3 spatial indexing and SLAM. |
-| [SyncFleet](https://github.com/Mullassery/SyncFleet) | Rust, SQLite-backed peer-to-peer state synchronization for robotics fleets — TLS 1.3 mutual authentication and conflict resolution. |
+| [SyncFleet](https://github.com/Mullassery/SyncFleet) | Rust, SQLite-backed peer-to-peer state synchronization for robotics fleets — mutual-TLS 1.3 peering with pinned certificates, version-vector incremental replication (offline-first, idempotent, batched bootstrap), a background peer sync loop with exponential backoff, and mDNS peer discovery. Conflict resolution is still on the roadmap. |
 
 ## 📫 Reach Me
 
