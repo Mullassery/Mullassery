@@ -149,3 +149,12 @@ A multi-repo, in-development OS project outside the MarTech day job. Most subsys
 - 🔗 [github.com/Mullassery](https://tinyurl.com/georgi-github)
 
 **Thanks for stopping by — always happy to talk CDPs, marketing data pipelines, or the tooling that makes them reliable.**
+
+## Audit transparency
+
+Portfolio-wide audits track **confirmed** and **unverified** issues separately.
+Unverified items stay documented and visible until they are tested or
+disproven — they are not dismissed.
+
+- [Open issues register](OPEN_ISSUES.md) — confirmed gaps, unverified/open
+  items, evidence, and recently fixed commits.
