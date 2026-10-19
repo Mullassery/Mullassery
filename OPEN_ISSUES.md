@@ -38,20 +38,28 @@ Legend: **C** = confirmed genuine · **U** = unverified/open (not disproven).
 | C16 | pyvectorhound | Quantization in-process only; no remote write-through | Open (documented) |
 | C17 | PyRoboReplay | Remaining phase 16–20 ops not bridged (decision reconstruction, alternative timelines, clustering, window analysis, scenarios, rule extraction) | Open |
 | C18 | PyTerrainMap | Remaining op limits: LOD/georeferencing, typed APIs, network SRTM | Open (documented) |
-| C19 | ClusterAudienceKit | Remaining slices: temporal membership/churn/lifecycle/sensitivity/scenario comparison; price tier/affinity/sensitivity/competitive/threshold/demand/margin/bundles; revenue alerts/CAC/margins/upsell/concentration/cohort/growth; neural autoencoder/RNN | Open |
+| C19 | ClusterAudienceKit | History/momentum/tier/affinity/CAC + composition/what-if/discount/attribution/forecast added; remaining slices: lifecycle/scenario comparison, competitive/threshold/demand/margin/bundles, neural autoencoder/RNN | Partial (`aed30cb`, `310a08b`) |
 | C20 | PyReverseETL | Kafka/HDFS/Spark/dashboard not wired; Rust-side plugin registration open | Open (DuckDB/Postgres added `33514b2`) |
 | C21 | PyDBTGuard | Snowflake/BigQuery/Redshift/MySQL not wired | Open (DuckDB/Postgres added `e8e7d23`) |
-| C22 | PyStreamPDF | TLS added; mTLS, request-size limits, access logging, rate-limit persistence, cert rotation, checked-in OCR corpus remain | Partial (`e81c811`) |
+| C22 | PyStreamPDF | TLS/mTLS, body limits, access logging, streaming and real Tesseract OCR verified; rate-limit persistence, cert rotation, checked-in OCR corpus remain | Partial (`e81c811`, `ad04725`) |
 | C23 | PyStreamMCP | Experimental adapters guarded but unimplemented | Open (documented) |
-| C24 | PyStreamXL | `requires-python >=3.9` but CI tests only 3.10–3.12; no cp39 wheel/test; no wheel import smoke | Open |
-| C25 | PyRoboReplay | PyPI only Linux x86_64 + macOS arm64; no Windows/Linux aarch64/macOS x86_64; no wheel import smoke | Open |
-| C26 | CodeAtlas | Release config builds many wheels, PyPI 0.7.0 has only macOS arm64 + sdist; release has no wheel smoke | Open |
-| C27 | pyvectorhound | No release workflow; PyPI 1.8.0 only cp312 macOS arm64 + sdist; no Linux/Windows wheels; no 3.8 CI | Open |
-| C28 | PrismNote | Observed 10% CI failure rate (3/30): frontend lint errors, E2E failures, missing `grapify-ai/grapify-action` | Confirmed by run history |
+| C24 | PyStreamXL | Fixed in repo: 3.9 added to CI + wheel import smoke | Fixed (`a583150`), not yet released |
+| C25 | PyRoboReplay | Fixed in repo: expanded release matrix + wheel smoke | Fixed (`7cb9dfb`), not yet released |
+| C26 | CodeAtlas | Fixed in repo: manylinux/cp39 build fixes + release wheel smoke | Fixed (`d865130`), not yet released |
+| C27 | pyvectorhound | Fixed in repo: release workflow with multi-platform wheels + 3.8 CI | Fixed (`ad123ae`), not yet released |
+| C28 | PrismNote | Was 3/30 CI failures (lint, E2E, missing Graphify action); now lint clean + 207/207 E2E | Fixed (`775d917`), not yet released |
 
 ---
 
 ## Recently fixed (traceability)
+
+- PyStreamXL `a583150` — 3.9 CI + wheel smoke (C24).
+- PyRoboReplay `7cb9dfb` — expanded release matrix + wheel smoke (C25).
+- CodeAtlas `d865130` (+`e3b7450`,`b5f0513`,`16b004f`,`7c04ade`) — release build fixes (C26).
+- pyvectorhound `ad123ae` — multi-platform release workflow (C27).
+- PrismNote `775d917` — CI stabilization, 207/207 E2E (C28).
+- PyStreamPDF `ad04725` — mTLS, body limits, access logs, real OCR (C22).
+- ClusterAudienceKit `310a08b` — history/momentum/tier/affinity/CAC (C19).
 
 - SHER-Graphics `36275e7` — Vulkan feature wiring + fallback.
 - SHER-Display `34de7b0` — per-output scheduler.
