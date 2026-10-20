@@ -38,16 +38,16 @@ Legend: **C** = confirmed genuine · **U** = unverified/open (not disproven).
 | C16 | pyvectorhound | Quantization in-process only; no remote write-through | Open (documented) |
 | C17 | PyRoboReplay | Remaining phase 16–20 ops not bridged (decision reconstruction, alternative timelines, clustering, window analysis, scenarios, rule extraction) | Open |
 | C18 | PyTerrainMap | Remaining op limits: LOD/georeferencing, typed APIs, network SRTM | Open (documented) |
-| C19 | ClusterAudienceKit | History/momentum/tier/affinity/CAC + composition/what-if/discount/attribution/forecast added; remaining slices: lifecycle/scenario comparison, competitive/threshold/demand/margin/bundles, neural autoencoder/RNN | Partial; 7.5.0 released (`aed30cb`, `310a08b`) |
+| C19 | ClusterAudienceKit | History/momentum/tier/affinity/CAC + composition/what-if/discount/attribution/forecast added; remaining slices: lifecycle/scenario comparison, competitive/threshold/demand/margin/bundles, neural autoencoder/RNN | Partial; 7.5.2 released (`aed30cb`, `310a08b`) |
 | C20 | PyReverseETL | Kafka/HDFS/Spark/dashboard not wired; Rust-side plugin registration open | Open (DuckDB/Postgres added `33514b2`) |
 | C21 | PyDBTGuard | Snowflake/BigQuery/Redshift/MySQL not wired | Open (DuckDB/Postgres added `e8e7d23`) |
-| C22 | PyStreamPDF | TLS/mTLS, body limits, access logging, streaming and real Tesseract OCR verified; rate-limit persistence, cert rotation, checked-in OCR corpus remain | Partial; 2.4.0 released (`e81c811`, `ad04725`) |
+| C22 | PyStreamPDF | TLS/mTLS, body limits, access logging, streaming and real Tesseract OCR verified; rate-limit persistence, cert rotation, checked-in OCR corpus remain | Partial; 2.4.2 released (`e81c811`, `ad04725`) |
 | C23 | PyStreamMCP | Experimental adapters guarded but unimplemented | Open (documented) |
 | C24 | PyStreamXL | Fixed in repo: 3.9 added to CI + wheel import smoke | Fixed (`a583150`); 6.2.0 on PyPI (CI-only change) |
-| C25 | PyRoboReplay | Fixed in repo: expanded release matrix + wheel smoke | Fixed; released 2.12.0 (`7cb9dfb`) |
-| C26 | CodeAtlas | Fixed in repo: manylinux/cp39 build fixes + release wheel smoke | Fixed; released 0.8.0 (`d865130`) |
-| C27 | pyvectorhound | Fixed in repo: release workflow with multi-platform wheels + 3.8 CI | Fixed; released 1.9.0 (`ad123ae`) |
-| C28 | PrismNote | Was 3/30 CI failures (lint, E2E, missing Graphify action); now lint clean + 207/207 E2E | Fixed; released 1.12.5 (`775d917`) |
+| C25 | PyRoboReplay | Fixed in repo: expanded release matrix + wheel smoke | Fixed; released 2.12.1 (`7cb9dfb`) |
+| C26 | CodeAtlas | Fixed in repo: manylinux/cp39 build fixes + release wheel smoke | Fixed; released 0.8.2 (`d865130`) |
+| C27 | pyvectorhound | Fixed in repo: release workflow with multi-platform wheels + 3.8 CI | Fixed; released 1.9.2 (`ad123ae`) |
+| C28 | PrismNote | Was 3/30 CI failures (lint, E2E, missing Graphify action); now lint clean + 207/207 E2E | Fixed; released 1.12.7 (`775d917`) |
 
 ---
 
@@ -57,14 +57,14 @@ All on PyPI and as GitHub Releases:
 
 | Repo | Version |
 |---|---|
-| PyRoboReplay | 2.12.0 |
-| CodeAtlas | 0.8.0 |
-| pyvectorhound | 1.9.0 |
-| PrismNote | 1.12.5 |
-| PyStreamPDF | 2.4.0 |
-| ClusterAudienceKit | 7.5.0 |
-| PyReverseETL | 3.5.0 |
-| PyDBTGuard | 2.4.0 |
+| PyRoboReplay | 2.12.1 |
+| CodeAtlas | 0.8.2 |
+| pyvectorhound | 1.9.2 |
+| PrismNote | 1.12.7 |
+| PyStreamPDF | 2.4.2 |
+| ClusterAudienceKit | 7.5.2 |
+| PyReverseETL | 3.5.2 |
+| PyDBTGuard | 2.4.2 |
 
 PyStreamXL 6.2.0 was already published; post-release changes were CI/docs only.
 
