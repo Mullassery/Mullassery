@@ -17,7 +17,7 @@ I build open-source tools for the parts of the customer-data stack that break qu
 | Project | What it does |
 |---|---|
 | **[PyTagManager](https://github.com/Mullassery/PyTagManager)** | Debug why GTM tags do not fire. Inspects containers, correlates runtime DOM → dataLayer → GTM → network in a real browser, audits consent and script performance, and generates reviewable fixes. [PyPI](https://pypi.org/project/pytagmanager/) |
-| **[ScrapeOwl](https://github.com/Mullassery/ScrapeOwl)** | Rust-native, self-hosted scraping engine: SSRF-guarded fetching, deterministic HTML → Markdown/text/JSON, and schema-validated LLM extraction (OpenAI-compatible + Ollama). [PyPI](https://pypi.org/project/scrapeowl/) |
+| **[QuillSift](https://github.com/Mullassery/QuillSift)** | Rust-native, self-hosted scraping engine: SSRF-guarded fetching, deterministic HTML → Markdown/text/JSON, and schema-validated LLM extraction (OpenAI-compatible + Ollama). [PyPI](https://pypi.org/project/scrapeowl/) |
 | **[PyTagShield](https://github.com/Mullassery/PyTagShield)** | Consent-aware, privacy-minimizing event pipeline with a Rust core and Python API. Validate, pseudonymize, minimize, and route events to GA4, Meta CAPI, PostHog, sGTM, or webhooks. [PyPI](https://pypi.org/project/pytagshield/) |
 | **[Squid-CRM](https://github.com/Mullassery/Squid-CRM)** | Self-hostable CRM backend, API-compatible with Twenty. Rust + Axum + PostgreSQL + GraphQL/REST, multi-tenant, RBAC, custom objects, webhooks. Alpha. |
 
@@ -52,14 +52,14 @@ Every project links straight to its **Use Cases** section where one exists — t
 | [PyTagShield](https://github.com/Mullassery/PyTagShield) | Consent-aware, privacy-minimizing server-side event pipeline: validation, pseudonymization, data minimization, and destination routing (GA4, Meta CAPI, PostHog, sGTM, webhooks). |
 | [ClusterAudienceKit](https://github.com/Mullassery/ClusterAudienceKit#use-cases) | Customer segmentation engine (Rust core + Python bindings): RFM analysis, multiple clustering algorithms, churn/CLV scoring, and streaming segmentation with drift detection. |
 | [PyReverseETL](https://github.com/Mullassery/PyReverseETL#use-cases) | Moves data from warehouses/databases to CRM and marketing-automation destinations with real PII masking and a recorded lineage graph — the activation counterpart to CDP ingestion. |
-| [MessageBirds](https://github.com/Mullassery/MessageBirds) | Customer data platform infrastructure: Kafka-based event streaming, Postgres storage, an edge ingest gateway, and SDKs across web, iOS, and Python. |
+| [PyCustomerHub](https://github.com/Mullassery/PyCustomerHub) | Customer data platform infrastructure: Kafka-based event streaming, Postgres storage, an edge ingest gateway, and SDKs across web, iOS, and Python. |
 | [Squid-CRM](https://github.com/Mullassery/Squid-CRM) | Self-hostable CRM backend, API-compatible with Twenty. Multi-tenant, RBAC, custom objects, GraphQL/REST, and webhooks. Alpha; the frontend is not vendored. |
 
 **These projects are complementary by design** — each is useful on its own, but together they cover a customer-data lifecycle end to end:
 
 - **PyTagManager** — the **measurement** layer: implements and runtime-verifies the analytics tags that generate the events.
 - **PyTagShield** — the **consent and routing** layer: minimizes what leaves the browser and controls which destinations receive it.
-- **MessageBirds** — the **ingestion/infrastructure** layer: streams events from web, iOS, and Python SDKs through Kafka into Postgres.
+- **PyCustomerHub** — the **ingestion/infrastructure** layer: streams events from web, iOS, and Python SDKs through Kafka into Postgres.
 - **ClusterAudienceKit** — the **intelligence** layer: turns raw data into segments with RFM analysis, clustering, and churn/CLV scoring.
 - **PyReverseETL** — the **activation** layer: pushes segments to CRM and marketing-automation destinations with PII masking and lineage.
 - **Squid-CRM** — the **system of record** layer: a self-hostable CRM backend for the data the rest of the stack activates into.
@@ -70,7 +70,7 @@ The stack reads as one round trip: **verify capture → enforce consent → inge
 
 | Repo | What it does |
 |---|---|
-| [ScrapeOwl](https://github.com/Mullassery/ScrapeOwl) | Rust-native, self-hosted scraping: SSRF-guarded fetching, deterministic HTML → Markdown/text/JSON, schema-validated LLM extraction, Python bindings, and a CLI. |
+| [QuillSift](https://github.com/Mullassery/QuillSift) | Rust-native, self-hosted scraping: SSRF-guarded fetching, deterministic HTML → Markdown/text/JSON, schema-validated LLM extraction, Python bindings, and a CLI. |
 | [MudFish](https://github.com/Mullassery/MudFish) | Rust-native web crawling and intelligence engine — deterministic crawling first, browser rendering only when required. |
 
 ### Data Pipeline Reliability & Quality
