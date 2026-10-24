@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Georgi Mullassery — MarTech, customer data, and AI engineering</title>
+  <desc id="desc">Profile banner for Georgi Mullassery, builder of open-source customer data and AI tooling.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b16"/>
+      <stop offset="0.55" stop-color="#0c1428"/>
+      <stop offset="1" stop-color="#101b35"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.2" cy="0.1" r="0.9">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity="0.045"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="28" fill="url(#glow)"/>
+  <rect width="1200" height="300" rx="28" fill="url(#grid)"/>
+  <rect x="0" y="0" width="10" height="300" rx="5" fill="url(#accent)"/>
+
+  <g transform="translate(80 84)" fill="none" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="18" cy="18" r="12"/>
+    <circle cx="92" cy="18" r="12"/>
+    <circle cx="55" cy="76" r="12"/>
+    <path d="M30 18h50M26 29l20 36M84 29L64 65" stroke-opacity="0.75"/>
+  </g>
+
+  <text x="220" y="130" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="62" font-weight="750" fill="#f8fafc" letter-spacing="-1.5">Georgi Mullassery</text>
+  <text x="222" y="180" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" fill="#c7d2fe">MarTech Solutions Architect · Customer Data Platforms</text>
+  <text x="222" y="218" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" fill="#a7f3d0">Data Engineering · AI Engineering</text>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" fill="#94a3b8">
+    <text x="222" y="260">Bengaluru, India · building open-source tools for the customer-data stack</text>
+  </g>
+  <g transform="translate(980 92)">
+    <rect x="0" y="0" width="140" height="116" rx="20" fill="#0b1224" stroke="#22d3ee" stroke-opacity="0.35"/>
+    <text x="70" y="46" text-anchor="middle" font-family="ui-sans-serif, -apple-system, sans-serif" font-size="15" fill="#7dd3fc">verify</text>
+    <text x="70" y="72" text-anchor="middle" font-family="ui-sans-serif, -apple-system, sans-serif" font-size="15" fill="#a5b4fc">ingest</text>
+    <text x="70" y="98" text-anchor="middle" font-family="ui-sans-serif, -apple-system, sans-serif" font-size="15" fill="#6ee7b7">activate</text>
+  </g>
+</svg>

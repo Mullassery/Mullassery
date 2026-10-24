@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/profile-banner.svg" alt="Georgi Mullassery — MarTech, customer data, and AI engineering" width="100%" />
+</p>
+
 # Georgi Mullassery
 
 **MarTech Solutions Architect** · Customer Data Platforms · Data Engineering · AI Engineering
@@ -17,11 +21,11 @@ I build open-source tools for the parts of the customer-data stack that break qu
 | Project | What it does |
 |---|---|
 | **[PyTagManager](https://github.com/Mullassery/PyTagManager)** | Debug why GTM tags do not fire. Inspects containers, correlates runtime DOM → dataLayer → GTM → network in a real browser, audits consent and script performance, and generates reviewable fixes. [PyPI](https://pypi.org/project/pytagmanager/) |
-| **[QuillSift](https://github.com/Mullassery/QuillSift)** | Rust-native, self-hosted scraping engine: SSRF-guarded fetching, deterministic HTML → Markdown/text/JSON, and schema-validated LLM extraction (OpenAI-compatible + Ollama). [PyPI](https://pypi.org/project/scrapeowl/) |
+| **[QuillSift](https://github.com/Mullassery/QuillSift)** | Rust-native, self-hosted scraping engine: SSRF-guarded fetching, deterministic HTML → Markdown/text/JSON, and schema-validated LLM extraction (OpenAI-compatible + Ollama). [PyPI](https://pypi.org/project/quillsift/) |
 | **[PyTagShield](https://github.com/Mullassery/PyTagShield)** | Consent-aware, privacy-minimizing event pipeline with a Rust core and Python API. Validate, pseudonymize, minimize, and route events to GA4, Meta CAPI, PostHog, sGTM, or webhooks. [PyPI](https://pypi.org/project/pytagshield/) |
 | **[Squid-CRM](https://github.com/Mullassery/Squid-CRM)** | Self-hostable CRM backend, API-compatible with Twenty. Rust + Axum + PostgreSQL + GraphQL/REST, multi-tenant, RBAC, custom objects, webhooks. Alpha. |
 
-Also worth a look: **[TinyBridge](https://github.com/Mullassery/TinyBridge)** — a macOS-native Linux VM runtime that boots a real Ubuntu guest on Apple's Virtualization.framework · **[PyStreamXL](https://github.com/Mullassery/PyStreamXL)** — constant-memory Excel streaming with a Rust core.
+Also worth a look: **[OmniPilot](https://github.com/Mullassery/OmniPilot)** — verification-first mobile automation with evidence-backed results and an MCP server · **[TinyBridge](https://github.com/Mullassery/TinyBridge)** — a macOS-native Linux VM runtime that boots a real Ubuntu guest on Apple's Virtualization.framework · **[PyStreamXL](https://github.com/Mullassery/PyStreamXL)** — constant-memory Excel streaming with a Rust core.
 
 ## What I'm focused on
 
@@ -188,7 +192,7 @@ Raspberry Pi 5, ESP32, MQTT (Eclipse / RabbitMQ), Node-RED, AWS IoT Core, AWS Io
 - **Show the evidence.** Tests, real browser runs, and confidence labels instead of confident guesses.
 - **Keep it local-first.** Diagnostics should run on your machine, without sending telemetry to a service.
 
-Portfolio-wide audits track **confirmed** and **unverified** issues separately. Unverified items stay documented until tested or disproven — they are not dismissed. See the [open issues register](OPEN_ISSUES.md).
+Portfolio-wide audits track **confirmed** and **unverified** issues separately. Unverified items stay documented until tested or disproven — they are not dismissed. See the [open issues register](docs/internal/OPEN_ISSUES.md).
 
 ## Contact
 
